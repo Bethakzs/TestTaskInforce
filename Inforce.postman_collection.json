@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "64bed102-ca58-4fa3-96c0-373088a393c8",
+		"name": "Inforce",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29847127",
+		"_collection_link": "https://cloudy-station-167426.postman.co/workspace/New-Team-Workspace~175c9189-c234-4ef8-833b-8897bf3b87f6/collection/29847127-64bed102-ca58-4fa3-96c0-373088a393c8?action=share&source=collection_link&creator=29847127"
+	},
+	"item": [
+		{
+			"name": "scrape all books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/scraper/scrape?url=https://books.toscrape.com",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"scraper",
+						"scrape"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://books.toscrape.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "scrape books with number of pages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/scraper/scrape?url=https://books.toscrape.com&pages=4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"scraper",
+						"scrape"
+					],
+					"query": [
+						{
+							"key": "url",
+							"value": "https://books.toscrape.com"
+						},
+						{
+							"key": "pages",
+							"value": "4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
